@@ -6,8 +6,9 @@ There are only 3 git hook examples here:
 
 | Git hook   | Description |
 | ---------- | :--------- |
-| commit-msg | The hook is allowed to edit the message file in place, and can be used to normalize the message into some project standard format. It can also be used to refuse the commit after inspecting the message file.  |
 | pre-commit | It takes no parameters, and is invoked before obtaining the proposed commit log message and making a commit  |
+| prepare-commit-msg| This hook is invoked by git-commit right after preparing the default log message, and before the editor is started. The purpose of the hook is to edit the message file in place. |
+| commit-msg | The hook is allowed to edit the message file in place, and can be used to normalize the message into some project standard format. It can also be used to refuse the commit after inspecting the message file.  |
 | pre-push   | This hook can be used to prevent a push from taking place, the hook is called with two parameters.  |
 
 ## How to use
